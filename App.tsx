@@ -1,9 +1,9 @@
 
 import React, { useState, useCallback, useEffect } from 'react';
-import Header from './components/Header';
-import PredictionForm from './components/PredictionForm';
-import ResultCard from './components/ResultCard';
-import AdSenseUnit from './components/AdSenseUnit';
+import Header from './Header';
+import PredictionForm from './PredictionForm';
+import ResultCard from './ResultCard';
+import AdSenseUnit from './AdSenseUnit';
 import { Category, PredictionResult, Language, AppView } from './types';
 import { GoogleGenAI, Type } from "@google/genai";
 import { 
