@@ -1,7 +1,7 @@
 
 import React, { useMemo } from 'react';
-import { PredictionResult, Language, TranslationSchema } from '../types';
-import { CATEGORIES_DATA, ZODIAC_SIGNS } from '../constants';
+import { PredictionResult, Language, TranslationSchema } from './types';
+import { CATEGORIES_DATA, ZODIAC_SIGNS } from './constants';
 
 interface Props {
   lang: Language;
