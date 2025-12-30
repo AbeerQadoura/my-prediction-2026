@@ -340,8 +340,45 @@ export const INSIGHTS: Record<Language, { title: string, desc: string }[]> = {
 };
 
 export const PRIVACY_CONTENT: Record<Language, string> = {
-  ar: `نحن في "مُتنبئ 2026" نضع خصوصيتك في المقام الأول. نحن نلتزم بسياسات Google AdSense الصارمة فيما يخص حماية البيانات. نحن نستخدم ملفات تعريف الارتباط (Cookies) لجمع معلومات حول كيفية استخدامك للموقع لتحسين المحتوى وتقديم إعلانات تناسب اهتماماتك. نحن لا نقوم ببيع بياناتك لأطراف ثالثة، كما أننا نضمن لك أن عملية إدخال الاسم تتم في بيئة آمنة ولا يتم تخزينها بشكل دائم.`,
-  en: `At "2026 Predictor", your privacy is our top priority. We adhere to strict Google AdSense policies. We use cookies to collect info on how you use the site to improve content and serve relevant ads. We do not sell your data to third parties.`
+  ar: `سياسة الخصوصية
+في "مُتنبئ 2026" (MyPredictor.site)، نولي أهمية قصوى لخصوصية زوارنا.
+
+1. ملفات الدخول (Log Files):
+مثل معظم خوادم المواقع الأخرى، نستخدم نظام ملفات الدخول. وهذا يشمل عناوين بروتوكول الإنترنت (IP)، نوع المتصفح، مزود خدمة الإنترنت (ISP)، والتاريخ/الوقت، لجمع معلومات حول كيفية استخدامك للموقع لتحسين المحتوى.
+
+2. ملفات تعريف الارتباط (Cookies):
+نحن نستخدم الكوكيز لتخزين المعلومات عن تفضيلات الزوار، ولتسجيل معلومات محددة عن الصفحات التي يزورها المستخدم.
+
+3. كوكيز دبل كليك (DoubleClick DART):
+- جوجل، كطرف ثالث، تستخدم الكوكيز لخدمة الإعلانات على موقعنا.
+- استخدام جوجل لكوكي DART يمهد لخدمة الإعلانات للمستخدمين بناءً على زيارتهم لموقعنا ومواقع أخرى.
+- يمكن للمستخدمين اختيار عدم استخدام كوكيز DART عن طريق زيارة سياسة الخصوصية الخاصة بإعلانات جوجل.
+
+4. شركاؤنا في الإعلانات:
+بعض شركائنا (مثل Google AdSense) قد يستخدمون الكوكيز. نحن لا نملك السيطرة على هذه الكوكيز التي يستخدمها معلنون طرف ثالث.
+
+موافقتك:
+باستخدامك لموقعنا، فإنك توافق على سياسة الخصوصية الخاصة بنا وشروطها.`,
+
+  en: `Privacy Policy
+At "2026 Predictor" (MyPredictor.site), the privacy of our visitors is of extreme importance to us.
+
+1. Log Files:
+Like many other Web sites, we use log files. The information inside the log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date/time stamp, referring/exit pages, and number of clicks to analyze trends and administer the site.
+
+2. Cookies and Web Beacons:
+We use cookies to store information about visitors' preferences, to record user-specific information on which pages the user accesses or visits.
+
+3. DoubleClick DART Cookie:
+- Google, as a third party vendor, uses cookies to serve ads on our site.
+- Google's use of the DART cookie enables it to serve ads to users based on their visit to our site and other sites on the Internet.
+- Users may opt out of the use of the DART cookie by visiting the Google ad and content network privacy policy.
+
+4. Advertising Partners:
+Some of our advertising partners may use cookies and web beacons on our site (such as Google AdSense). We have no access to or control over these cookies that are used by third-party advertisers.
+
+Consent:
+By using our website, you hereby consent to our privacy policy and agree to its terms.`
 };
 
 export const TERMS_CONTENT: Record<Language, string> = {
