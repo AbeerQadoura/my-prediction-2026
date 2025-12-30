@@ -336,7 +336,7 @@ const App: React.FC = () => {
             <button onClick={() => setView('terms')} className="hover:text-purple-400 transition-colors">{t.footerAbout}</button>
             <button onClick={() => setView('privacy')} className="hover:text-purple-400 transition-colors">{t.footerPrivacy}</button>
             {/* زر اتصل بنا الجديد */}
-            <a href="mailto:shoshomohammad530@gmail.com" className="hover:text-purple-400 transition-colors">اتصل بنا</a>
+            <a href="mailto:lolomavi0@gmail.com" className="hover:text-purple-400 transition-colors">اتصل بنا</a>
           </div>
           <div className="text-slate-600 text-[10px] leading-relaxed max-w-lg mx-auto font-bold uppercase">
             {t.footerDisclaimer}
