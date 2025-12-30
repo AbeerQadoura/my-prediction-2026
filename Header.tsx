@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Language, TranslationSchema } from '../types';
+import { Language, TranslationSchema } from './types';
 
 interface Props {
   lang: Language;
