@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback, useEffect } from 'react';
 import Header from './Header';
 import PredictionForm from './PredictionForm';
@@ -93,7 +92,7 @@ const App: React.FC = () => {
       const prompt = `Generate a creative 2026 prediction for ${name} (Zodiac: ${zodiac}, Category: ${category}). Language: ${lang === 'ar' ? 'Arabic' : 'English'}. Be optimistic, fun, and very specific to the category. Use emojis.`;
 
       const response = await ai.models.generateContent({
-        model: 'gemini-3-flash-preview',
+        model: 'gemini-2.0-flash-exp',
         contents: prompt,
         config: {
           systemInstruction: "You are an AI Oracle for the year 2026. You provide detailed, optimistic, and shareable predictions. Return JSON only.",
@@ -240,6 +239,20 @@ const App: React.FC = () => {
               ))}
             </div>
           </section>
+
+          {/* --- بداية قسم وصف الموقع (SEO) --- */}
+          <div className="max-w-3xl mx-auto mt-16 text-center px-6">
+            <h2 className="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-4">
+              ما هو مُتنبئ 2026؟
+            </h2>
+            <p className="text-gray-300 leading-relaxed mb-4 text-sm md:text-base">
+              موقع "مُتنبئ 2026" هو أول أداة ترفيهية عربية تستخدم تقنيات الذكاء الاصطناعي لتحليل الأسماء وتقديم توقعات ممتعة ومضحكة حول مستقبلك في عام 2026. سواء كنت تبحث عن حظك في <strong>المال</strong>، <strong>الحب</strong>، أو <strong>العمل</strong>، فإن موقعنا يقدم لك تجربة فريدة لمشاركتها مع أصدقائك على وسائل التواصل الاجتماعي.
+            </p>
+            <p className="text-gray-500 text-xs dir-ltr">
+              MyPredictor 2026 is a free AI-powered entertainment tool designed to predict your future fortune in Money, Love, and Career. Try it now for free!
+            </p>
+          </div>
+          {/* --- نهاية قسم وصف الموقع --- */}
         </>
       )}
       <div className="mt-20">
@@ -322,7 +335,8 @@ const App: React.FC = () => {
             <button onClick={() => setView('about')} className="hover:text-purple-400 transition-colors">{t.aboutTitle}</button>
             <button onClick={() => setView('terms')} className="hover:text-purple-400 transition-colors">{t.footerAbout}</button>
             <button onClick={() => setView('privacy')} className="hover:text-purple-400 transition-colors">{t.footerPrivacy}</button>
-            <button onClick={() => setView('contact')} className="hover:text-purple-400 transition-colors">{t.footerHelp}</button>
+            {/* زر اتصل بنا الجديد */}
+            <a href="mailto:shoshomohammad530@gmail.com" className="hover:text-purple-400 transition-colors">اتصل بنا</a>
           </div>
           <div className="text-slate-600 text-[10px] leading-relaxed max-w-lg mx-auto font-bold uppercase">
             {t.footerDisclaimer}
