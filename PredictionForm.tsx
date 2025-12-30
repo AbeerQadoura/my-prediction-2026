@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import { Category, Language, TranslationSchema } from '../types';
-import { CATEGORIES_DATA, SUGGESTED_NAMES_DATA, ZODIAC_SIGNS } from '../constants';
+import { Category, Language, TranslationSchema } from './types';
+import { CATEGORIES_DATA, SUGGESTED_NAMES_DATA, ZODIAC_SIGNS } from './constants';
 
 interface Props {
   lang: Language;
